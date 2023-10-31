@@ -1,0 +1,26 @@
+.navbar {
+  width: 150px;
+  position: fixed;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.navbar li {
+  display: block;
+  padding: 10px;
+}
+
+.navbar a {
+  display: block;
+  padding: 10px;
+}
+
+.navbar a:hover {
+  color: #fff;
+}
+
+.navbar a:hover:before {
+  content: ">";
+  display: inline-block;
+  margin-right: 10px;
+}
