@@ -42,9 +42,7 @@ function Home() {
               borderColor="gray.200"
             >
               <Link to={"/"}>
-                <Image boxSize="500px" 
-                className="logo" src={logo} 
-                alt="Logo" />
+                <Image width="320px" height="80px" className="logo" src={logo} alt="Logo" />
               </Link>
             </GridItem>
             <GridItem
