@@ -1,26 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
 import { Table, Thead, Tbody, Tr, Th, Td, Container } from "@chakra-ui/react";
 
 const BASE_URL = "https://hackthebox.com";
 
+
+
 const LeaderboardTable = ({ data }) => {
-  const [sortedData, setSortedData] = useState(data);
-  const [sortOrder, setSortOrder] = useState("asc");
-  const [sortKey, setSortKey] = useState(null);
-
-  const handleSort = (key) => {
-    const order = sortKey === key && sortOrder === "asc" ? "desc" : "asc";
-    const sorted = [...sortedData].sort((a, b) => {
-      if (a[key] < b[key]) return order === "asc" ? -1 : 1;
-      if (a[key] > b[key]) return order === "asc" ? 1 : -1;
-      return 0;
-    });
-
-    setSortedData(sorted);
-    setSortOrder(order);
-    setSortKey(key);
-  };
-
+  
   return (
     <Table
       variant="simple"
@@ -29,25 +15,17 @@ const LeaderboardTable = ({ data }) => {
     >
       <Thead>
         <Tr>
-          <Th color={"yellowgreen"} onClick={() => handleSort("avatar")}>
-            Avatar
+          <Th color={"yellowgreen"}>Avatar</Th>
+          <Th color={"yellowgreen"}>Username</Th>
+          <Th color={"yellowgreen"}>Root Owns</Th>
+          <Th color={"yellowgreen"}>
+            <Container display={{ base: "none", sm: "flex" }}>Rank</Container>
           </Th>
-          <Th color={"yellowgreen"} onClick={() => handleSort("name")}>
-            Username
-          </Th>
-          <Th color={"yellowgreen"} onClick={() => handleSort("root_owns")}>
-            Root Owns
-          </Th>
-          <Th color={"yellowgreen"} onClick={() => handleSort("rank_text")}>
-            Rank
-          </Th>
-          <Th color={"yellowgreen"} onClick={() => handleSort("points")}>
-            Points
-          </Th>
+          <Th color={"yellowgreen"}>Points</Th>
         </Tr>
       </Thead>
       <Tbody>
-        {sortedData.map((user) => (
+        {data.map((user) => (
           <Tr key={user.id}>
             <Td>
               <Container display={{ base: "none", sm: "flex" }}>
