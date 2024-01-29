@@ -3,10 +3,7 @@ import { Table, Thead, Tbody, Tr, Th, Td, Container } from "@chakra-ui/react";
 
 const BASE_URL = "https://hackthebox.com";
 
-
-
 const LeaderboardTable = ({ data }) => {
-  
   return (
     <Table
       variant="simple"
@@ -15,13 +12,12 @@ const LeaderboardTable = ({ data }) => {
     >
       <Thead>
         <Tr>
-          <Th color={"yellowgreen"}>Avatar</Th>
-          <Th color={"yellowgreen"}>Username</Th>
+          <Th color={"yellowgreen"}></Th>
+          <Th color={"yellowgreen"}>Name</Th>
           <Th color={"yellowgreen"}>Root Owns</Th>
           <Th color={"yellowgreen"}>
             <Container display={{ base: "none", sm: "flex" }}>Rank</Container>
           </Th>
-          <Th color={"yellowgreen"}>Points</Th>
         </Tr>
       </Thead>
       <Tbody>
@@ -43,7 +39,6 @@ const LeaderboardTable = ({ data }) => {
                 {user.rank_text}
               </Container>
             </Td>
-            <Td>{user.points}</Td>
           </Tr>
         ))}
       </Tbody>
