@@ -38,7 +38,7 @@ const LeaderboardTable = ({ data }) => {
             Name
             {sortBy === "name" && (sortOrder === "asc" ? <ChevronDownIcon /> : <ChevronUpIcon />)}
           </Th>
-          <Th color={"yellowgreen"} onClick={() => handleSort("root_owns")}>
+          <Th color={"yellowgreen"} display={{ base: "none", md: "table-cell" }} onClick={() => handleSort("root_owns")}>
             Root Owns
             {sortBy === "root_owns" && (sortOrder === "asc" ? <ChevronDownIcon /> : <ChevronUpIcon />)}
           </Th>
@@ -61,7 +61,7 @@ const LeaderboardTable = ({ data }) => {
               </Container>
             </Td>
             <Td>{user.name}</Td>
-            <Td>{user.root_owns}</Td>
+            <Td display={{ base: "none", md: "table-cell" }}>{user.root_owns}</Td>
             <Td>{user.rank_text}</Td>
             <Td>{user.points}</Td>
           </Tr>
