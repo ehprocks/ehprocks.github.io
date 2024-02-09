@@ -1,7 +1,7 @@
 {
   "name": "my-app",
   "version": "0.1.0",
-  "homepage": "https://ehprocks.github.io",
+  "homepage": "https://ehp.rocks",
   "private": true,
   "dependencies": {
     "@chakra-ui/icons": "^2.0.19",
