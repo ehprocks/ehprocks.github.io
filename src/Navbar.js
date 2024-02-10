@@ -16,6 +16,9 @@ function Navbar() {
       <li>
         <a href="#">Link 4</a>
       </li>
+      <li>
+        <a href="#">Link 5</a>
+      </li>
     </ul>
   );
 }
