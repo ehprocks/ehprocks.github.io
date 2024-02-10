@@ -10,7 +10,7 @@ import Admin from "./pages/Admin";
 
 function App() {
   return (
-    <Router basename="/ehprocks.github.io">
+    <Router>
       <Routes>
         <Route index element={<Home />} />
         <Route path="about" element={<About />} />
