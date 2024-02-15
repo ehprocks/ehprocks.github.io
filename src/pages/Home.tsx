@@ -134,6 +134,7 @@ function Home() {
                   options={{
                     strings: [
                       "ethical hacking",
+                      "hack the box",
                       "SQL injection",
                       "penetration testing",
                       "cross site scripting",
@@ -141,7 +142,6 @@ function Home() {
                       "file inclusion",
                       "Kali Linux",
                       "privilege escalation",
-                      "active directory",
                     ],
                     autoStart: true,
                     loop: true,
