@@ -5,6 +5,7 @@ import About from "./pages/About";
 import Discord from "./pages/Discord";
 import Resources from "./pages/Resources";
 import Leaderboard from "./pages/Leaderboard";
+import Calendar from "./pages/Calendar";
 import Admin from "./pages/Admin";
 
 
@@ -17,6 +18,7 @@ function App() {
         <Route path="resources" element={<Resources />} />
         <Route path="discord" element={<Discord />} />
         <Route path="leaderboard" element={<Leaderboard />} />
+        <Route path="calendar" element={<Calendar />} />
         <Route path="admin" element={<Admin />} />
       </Routes>
     </Router>
