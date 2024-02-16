@@ -2,15 +2,23 @@ import React, { useEffect, useState } from "react";
 import Dot from "../Dot";
 import "../App.scss";
 import logo from "../ehp_test3.png";
+import FullCalendar from "@fullcalendar/react";
+import dayGridPlugin from "@fullcalendar/daygrid";
 import { Button, ChakraProvider } from "@chakra-ui/react";
 import { 
     Grid, 
     GridItem, 
     Heading, 
     Container, 
-    Image } from "@chakra-ui/react";
+    Image 
+  } from "@chakra-ui/react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Navigation from "../Navigation";
+
+// EVENTS
+const events = [
+  { title: 'Meeting', date: '2024-02-05' }
+]
 
 function Calendar() {
   const [dots, setDots] = useState<Array<typeof Dot>>([]);
@@ -40,9 +48,10 @@ function Calendar() {
               borderColor="gray.200"
             >
               <Link to={"/"}>
-                <Image width="320px" height="80px" className="logo" src={logo} alt="Logo" />
+                <Image width="150px" height="80px" className="logo" src={logo} alt="Logo" />
               </Link>
             </GridItem>
+
             <GridItem
               rowSpan={12}
               colStart={9}
@@ -50,10 +59,31 @@ function Calendar() {
               border="0px dashed"
               borderColor="gray.200"
             >
-              <Navigation />
+              <Navigation/>
             </GridItem>
             
-     
+            <GridItem
+              rowSpan={[1, 22, 22, 22]}
+              colSpan={[0, 10, 10, 10]}
+              borderColor="gray.200"
+            >
+       
+                  <Container padding={"20px"}>
+                    <FullCalendar
+                      plugins={[dayGridPlugin]}
+                      initialView='dayGridMonth'
+                      weekends={false}
+                      events={events}
+                      headerToolbar={{
+                        start: "prev,next today",
+                        center: "title",
+                        end: ""
+                      }}
+                    />
+                  </Container>
+
+            </GridItem>
+            
           </Grid>
         </Container>
         <div
@@ -74,6 +104,9 @@ function Calendar() {
       </div>
     </ChakraProvider>
   );
+
 }
+
+
 
 export default Calendar;
