@@ -17,8 +17,9 @@ import Navigation from "../Navigation";
 
 // EVENTS
 const events = [
-  { title: 'Meeting', date: '2024-02-05' }
+  { title: 'Meeting', date: '2024-03-05' }
 ]
+
 
 function Calendar() {
   const [dots, setDots] = useState<Array<typeof Dot>>([]);
@@ -48,7 +49,7 @@ function Calendar() {
               borderColor="gray.200"
             >
               <Link to={"/"}>
-                <Image width="150px" height="80px" className="logo" src={logo} alt="Logo" />
+                <Image width="320px" height="80px" className="logo" src={logo} alt="Logo" />
               </Link>
             </GridItem>
 
@@ -96,6 +97,7 @@ function Calendar() {
             backgroundColor: "black",
             zIndex: "0",
           }}
+
         >
           {dots.map((DotComponent, index) => (
             <DotComponent key={index} />
@@ -106,7 +108,6 @@ function Calendar() {
   );
 
 }
-
 
 
 export default Calendar;
