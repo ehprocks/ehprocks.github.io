@@ -60,7 +60,7 @@ function About() {
               borderColor="gray.200"
             >
               <Link to={"/"}>
-              <Image width="320px" height="80px" className="logo" src={logo} alt="Logo" />
+                <Image width="300px" height="50px" className="logo" src={logo} alt="Logo" />
               </Link>
             </GridItem>
             <GridItem
