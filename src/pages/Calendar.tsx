@@ -4,11 +4,11 @@ import "../App.scss";
 import logo from "../ehp_test3.png";
 import FullCalendar from "@fullcalendar/react";
 import dayGridPlugin from "@fullcalendar/daygrid";
+import listPlugin from '@fullcalendar/list';
 import { Button, ChakraProvider } from "@chakra-ui/react";
 import { 
     Grid, 
     GridItem, 
-    Heading, 
     Container, 
     Image 
   } from "@chakra-ui/react";
@@ -17,7 +17,7 @@ import Navigation from "../Navigation";
 
 // EVENTS
 const events = [
-  { title: 'Meeting', date: '2024-03-05' }
+  { title: 'Meeting', date: '2024-03-25' }
 ]
 
 
@@ -71,14 +71,16 @@ function Calendar() {
        
                   <Container padding={"20px"}>
                     <FullCalendar
-                      plugins={[dayGridPlugin]}
+                      plugins={[dayGridPlugin, listPlugin]}
                       initialView='dayGridMonth'
-                      weekends={false}
+                      weekends={true}
                       events={events}
+                      height={"100%"}
+                      aspectRatio={0.5}
                       headerToolbar={{
                         start: "prev,next today",
                         center: "title",
-                        end: ""
+                        end: "dayGridMonth dayGridWeek listMonth"
                       }}
                     />
                   </Container>
