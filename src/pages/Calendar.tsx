@@ -6,24 +6,30 @@ import FullCalendar from "@fullcalendar/react";
 import dayGridPlugin from "@fullcalendar/daygrid";
 import listPlugin from '@fullcalendar/list';
 import { Button, ChakraProvider } from "@chakra-ui/react";
-import { 
-    Grid, 
-    GridItem, 
-    Container, 
-    Image 
-  } from "@chakra-ui/react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Navigation from "../Navigation";
+import "../calendar.css";
+import { 
+  Grid, 
+  GridItem, 
+  Container, 
+  Image 
+} from "@chakra-ui/react";
+import * as bootstrap from "bootstrap";
 
 // EVENTS
 const events = [
-  { title: 'Meeting', date: '2024-03-25' }
+  { title: 'Surveillance', start: '2024-04-01T19:00:00'}, 
+  { title: 'Surveillance II', start: '2024-04-04T19:00:00'},
+  { title: 'NCL Recap', start: '2024-04-08T19:00:00'},
+  { title: 'Headless', start: '2024-04-11T19:00:00'},
+  { title: 'Peraton Speaker Event ', start: '2024-04-12T19:00:00'},
+  { title: 'Elections', start: '2024-04-15T19:00:00'},
 ]
-
 
 function Calendar() {
   const [dots, setDots] = useState<Array<typeof Dot>>([]);
-
+  
   useEffect(() => {
     setDots(Array.from({ length: 40 }, () => Dot));
   }, []);
@@ -62,31 +68,28 @@ function Calendar() {
             >
               <Navigation/>
             </GridItem>
-            
+
             <GridItem
-              rowSpan={[1, 22, 22, 22]}
-              colSpan={[0, 10, 10, 10]}
+              rowSpan={12}
+              colSpan={12}
               borderColor="gray.200"
             >
-       
-                  <Container padding={"20px"}>
-                    <FullCalendar
-                      plugins={[dayGridPlugin, listPlugin]}
-                      initialView='dayGridMonth'
-                      weekends={true}
-                      events={events}
-                      height={"100%"}
-                      aspectRatio={0.5}
-                      headerToolbar={{
-                        start: "prev,next today",
-                        center: "title",
-                        end: "dayGridMonth dayGridWeek listMonth"
-                      }}
-                    />
-                  </Container>
-
+              <div>
+                <FullCalendar
+                  plugins={[dayGridPlugin, listPlugin]}
+                  initialView='dayGridMonth'
+                  events={events}
+                  weekends={false}
+                  defaultAllDayEventDuration={"19:00:00"}
+                  height={"100vh"}
+                  headerToolbar={{
+                    start: "prev,next today",
+                    center: "title",
+                    end: "dayGridMonth,dayGridWeek,listMonth"
+                  }}
+                />
+              </div>
             </GridItem>
-            
           </Grid>
         </Container>
         <div
@@ -99,7 +102,6 @@ function Calendar() {
             backgroundColor: "black",
             zIndex: "0",
           }}
-
         >
           {dots.map((DotComponent, index) => (
             <DotComponent key={index} />
@@ -108,8 +110,6 @@ function Calendar() {
       </div>
     </ChakraProvider>
   );
-
 }
-
 
 export default Calendar;
