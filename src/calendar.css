@@ -1,0 +1,43 @@
+.popoverStyle{
+    z-index: 99999 !important;
+}
+a {
+    color: #aee83b !important;
+}
+.fc-h-event .fc-event-title-container {
+    color: #000000 !important;
+    background-color: #aee83bdc !important;
+}
+.fc-toolbar-title {
+    color: #aee83b !important;
+    border: #000000 !important;
+}
+.fc-list-day-cushion {
+    color: #aee83b !important;
+    background-color: #000000 !important;
+}
+.fc-button  {
+    background-color: #aee83b !important;
+    color: #000000 !important;
+}
+.fc-list-event-time {
+    color: #aee83b !important;
+    background-color: #000000 !important;
+}
+.fc-list-event-title {
+    color: #aee83b !important;
+    background-color: #000000 !important;
+}
+.fc-list-event-graphic {
+    color: #aee83b !important;
+    background-color: #000000 !important;
+}
+.fc-list-event-dot {
+    border: calc(var(--fc-list-event-dot-width)/2) solid #ffffff;
+    border-radius: calc(var(--fc-list-event-dot-width)/2);
+    box-sizing: content-box;
+    display: inline-block;
+    height: 0px;
+    width: 0px;
+}
+
