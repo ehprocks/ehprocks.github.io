@@ -27,6 +27,11 @@ const events = [
   { title: 'Elections', start: '2024-04-15T19:00:00'},
 ]
 
+const cancelled = [
+  { title: 'Meeting Cancelled', start: '2024-04-04T19:00:00'},
+  { title: 'Meeting Cancelled', start: '2024-04-08T19:00:00'}
+] 
+
 function Calendar() {
   const [dots, setDots] = useState<Array<typeof Dot>>([]);
   
