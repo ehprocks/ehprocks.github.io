@@ -22,8 +22,6 @@ import * as bootstrap from "bootstrap";
 // EVENTS
 const events = [
   { title: 'Surveillance', start: '2024-04-01T19:00:00'}, 
-  { title: 'Surveillance II', start: '2024-04-04T19:00:00'},
-  { title: 'NCL Recap', start: '2024-04-08T19:00:00'},
   { title: 'Headless', start: '2024-04-11T19:00:00'},
   { title: 'Peraton Speaker Event ', start: '2024-04-12T19:00:00'},
   { title: 'Elections', start: '2024-04-15T19:00:00'},
