@@ -10,6 +10,8 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Navigation from "../Navigation";
 import "../calendar.css";
 import { 
+  HStack,
+  Heading,
   Grid, 
   GridItem, 
   Container, 
