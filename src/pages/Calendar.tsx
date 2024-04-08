@@ -85,8 +85,7 @@ function Calendar() {
                   initialView='dayGridMonth'
                   events={events}
                   weekends={false}
-                  defaultAllDayEventDuration={"19:00:00"}
-                  height={"100vh"}
+                  height={"90vh"}
                   headerToolbar={{
                     start: "prev,next today",
                     center: "title",
@@ -95,6 +94,7 @@ function Calendar() {
                 />
               </div>
             </GridItem>
+
           </Grid>
         </Container>
         <div
