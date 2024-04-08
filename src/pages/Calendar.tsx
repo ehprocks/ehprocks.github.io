@@ -75,8 +75,8 @@ function Calendar() {
             </GridItem>
 
             <GridItem
-              rowSpan={12}
-              colSpan={12}
+              rowSpan={[1, 22, 22, 22]}
+              colSpan={[0, 10, 10, 10]}
               borderColor="gray.200"
             >
               <div>
