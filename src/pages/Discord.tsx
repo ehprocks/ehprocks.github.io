@@ -56,8 +56,8 @@ function Discord() {
               <Navigation />
             </GridItem>
             <GridItem
-              rowSpan={[5, 5, 6, 8]}
-              colSpan={10}
+              rowSpan={[1, 10, 10, 10]}
+              colSpan={[1, 10, 10, 10]}
               border="0px"
               borderColor="gray.200"
               className="heading"
