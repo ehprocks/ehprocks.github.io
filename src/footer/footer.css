@@ -37,12 +37,12 @@
     flex-direction: row;
 }
 .socialmedia img {
-    width: 80%;
+    width: 85%;
     height: auto;
     webkit-border-radius: 25px;
     moz-border-radius: 25px;
     border-radius: 25px;
-    background: #aee83b;
+    background: #6fd48e;
 }
 .sb_footer-links-div p{
     font-size: 14px;
