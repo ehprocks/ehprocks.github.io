@@ -14,6 +14,7 @@ import {
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import LeaderboardTable from "../LeaderboardTable";
 import Navigation from "../Navigation";
+import Footer from "../footer/Footer";
 
 const Statistics = () => {
   const [data, setData] = useState([]);
@@ -136,6 +137,7 @@ function About() {
           ))}
         </div>
       </div>
+      <Footer></Footer>
     </ChakraProvider>
   );
 }

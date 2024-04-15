@@ -9,6 +9,7 @@ import { Button, ChakraProvider } from "@chakra-ui/react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Navigation from "../Navigation";
 import "../calendar.css";
+import Footer from "../footer/Footer";
 import { 
   HStack,
   Heading,
@@ -113,6 +114,7 @@ function Calendar() {
           ))}
         </div>
       </div>
+      <Footer></Footer>
     </ChakraProvider>
   );
 }

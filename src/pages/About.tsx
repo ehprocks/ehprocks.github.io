@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import Dot from "../Dot";
 import "../App.scss";
 import logo from "../ehp_test3.png";
-
 import { Button, ChakraProvider } from "@chakra-ui/react";
 import {
   HStack,
@@ -19,6 +18,7 @@ import { SiHackthebox } from "react-icons/si";
 import { Icon } from "@chakra-ui/react";
 import { IoMdPeople } from "react-icons/io";
 import Navigation from "../Navigation";
+import Footer from "../footer/Footer";
 
 function About() {
   const [dots, setDots] = useState<Array<typeof Dot>>([]);
@@ -264,6 +264,7 @@ function About() {
           ))}
         </div>
       </div>
+      <Footer></Footer>
     </ChakraProvider>
   );
 }

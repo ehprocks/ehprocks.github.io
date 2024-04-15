@@ -14,7 +14,7 @@ import {
 import Typewriter from "typewriter-effect";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Navigation from "../Navigation";
-import Footer from "../footer/footer";
+import Footer from "../footer/Footer";
 
 function Home() {
   const [dots, setDots] = useState<Array<typeof Dot>>([]);

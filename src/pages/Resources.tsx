@@ -17,6 +17,7 @@ import {
 } from "@chakra-ui/react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Navigation from "../Navigation";
+import Footer from "../footer/Footer";
 
 function Resources() {
   const [dots, setDots] = useState<Array<typeof Dot>>([]);
@@ -380,6 +381,7 @@ function Resources() {
           ))}
         </div>
       </div>
+      <Footer></Footer>
     </ChakraProvider>
   );
 }
