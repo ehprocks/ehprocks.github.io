@@ -12,7 +12,7 @@ import {
   Container,
   Image,
 } from "@chakra-ui/react";
-
+import Footer from "../footer/footer";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Navigation from "../Navigation";
 
@@ -134,6 +134,7 @@ function Discord() {
           ))}
         </div>
       </div>
+      <Footer/>
     </ChakraProvider>
   );
 }
