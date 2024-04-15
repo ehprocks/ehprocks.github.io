@@ -10,12 +10,15 @@ const Footer=()=>{
             <div className="sb_footer-section_padding">
                 <div className="sb_footer-links">
                     <div className="sb_footer-links-div">
-                        <h4>Purdue</h4>
+                        <h4>Community</h4>
                         <a href="https://polytechnic.purdue.edu/">
-                            <p>Purdue Polytech</p>
+                            <p>Purdue Polytechnic</p>
                         </a>
                         <a href="https://polytechnic.purdue.edu/departments/computer-and-information-technology">
                             <p>Purdue CIT</p>
+                        </a>
+                        <a href="https://boilerlink.purdue.edu/organization/cdcc">
+                            <p>Cyber Defense Club</p>
                         </a>
                     </div>
                     <div className="sb_footer-links-div">
@@ -47,14 +50,14 @@ const Footer=()=>{
                     </div>
 
                     <div className="sb_footer-links-div">
-                        <h4>Socialmedia</h4>
+                        <h4>Social Media</h4>
                         <div className="socialmedia">
                             <a href="https://www.linkedin.com/company/ethical-hackers-of-purdue"><img src={linkedin}/></a>
                             <a href="https://www.instagram.com/ethicalhackerspurdue/"><img src={insta}/></a>
                         </div>
                     </div>
 
-                    <hr></hr>
+                    
 
                     <div className="sb_footer-below">
                         < div className="sb_footer-copyright">
