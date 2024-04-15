@@ -14,6 +14,7 @@ import {
 import Typewriter from "typewriter-effect";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Navigation from "../Navigation";
+import Footer from "../footer/footer";
 
 function Home() {
   const [dots, setDots] = useState<Array<typeof Dot>>([]);
@@ -173,7 +174,6 @@ function Home() {
             </GridItem>
           </Grid>
         </Container>
-
         <div
           id="dot-wrapper"
           style={{
@@ -190,8 +190,8 @@ function Home() {
           ))}
         </div>
       </div>
+      <Footer/>
     </ChakraProvider>
   );
 }
-
 export default Home;
