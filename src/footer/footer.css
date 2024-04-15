@@ -41,12 +41,12 @@
     flex-direction: row;
 }
 .socialmedia img {
-    width: 85%;
+    width: 75%;
     height: auto;
     webkit-border-radius: 25px;
     moz-border-radius: 25px;
     border-radius: 25px;
-    background: #6fd48e;
+    background: #38f06f;
 }
 .sb_footer-links-div p{
     font-size: 15px;
@@ -66,8 +66,10 @@
     font-weight: 600;
 }
 hr {
-    color: rgb(175, 175, 179);    
+    background-color: #121212 !important;    
     width: 100%;
+    height: 2px;
+    border: none;
 }
 .socialmedia .a {
     color: rgb(175, 175, 179); 
