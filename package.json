@@ -12,6 +12,7 @@
     "@fullcalendar/daygrid": "^6.1.11",
     "@fullcalendar/list": "^6.1.11",
     "@fullcalendar/react": "^6.1.11",
+    "@popperjs/core": "^2.11.8",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
