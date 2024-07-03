@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from 'react-dom';
-import './Footer.css';
+import './footer.css';
 import insta from "../assets/insta.png";
 import linkedin from "../assets/linkedin.png";
 import discord from "../assets/discord.png";
