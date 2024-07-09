@@ -18,7 +18,7 @@ import { SiHackthebox } from "react-icons/si";
 import { Icon } from "@chakra-ui/react";
 import { IoMdPeople } from "react-icons/io";
 import Navigation from "../Navigation";
-import Footer from "../footer/Footer";
+import Footer from "../footer";
 
 function About() {
   const [dots, setDots] = useState<Array<typeof Dot>>([]);

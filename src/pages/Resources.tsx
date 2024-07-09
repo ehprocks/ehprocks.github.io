@@ -17,7 +17,7 @@ import {
 } from "@chakra-ui/react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Navigation from "../Navigation";
-import Footer from "../footer/Footer";
+import Footer from "../footer";
 
 function Resources() {
   const [dots, setDots] = useState<Array<typeof Dot>>([]);

@@ -14,7 +14,7 @@ import {
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import LeaderboardTable from "../LeaderboardTable";
 import Navigation from "../Navigation";
-import Footer from "../footer/Footer";
+import Footer from "../footer";
 
 const Statistics = () => {
   const [data, setData] = useState([]);

@@ -15,7 +15,7 @@ import {
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Login from "../Login";
 import Navigation from "../Navigation";
-import Footer from "../footer/Footer";
+import Footer from "../footer";
 
 function Admin() {
   const [dots, setDots] = useState<Array<typeof Dot>>([]);

@@ -12,7 +12,7 @@ import {
   Container,
   Image,
 } from "@chakra-ui/react";
-import Footer from "../footer/Footer";
+import Footer from "../footer";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Navigation from "../Navigation";
 
