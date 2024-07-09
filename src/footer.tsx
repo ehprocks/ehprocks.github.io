@@ -1,9 +1,9 @@
 import React from "react";
 import ReactDOM from 'react-dom';
-import './Footer.css';
-import insta from "../assets/insta.png";
-import linkedin from "../assets/linkedin.png";
-import discord from "../assets/discord.png";
+import './footer.css';
+import insta from "./assets/insta.png";
+import linkedin from "./assets/linkedin.png";
+import discord from "./assets/discord.png";
 
 const Footer = () => {
     return (
@@ -19,7 +19,7 @@ const Footer = () => {
                             <p>Purdue CIT</p>
                         </a>
                         <a href="https://boilerlink.purdue.edu/organization/cdcc">
-                            <p>Cyber Defense Club</p>
+                            <p>Blue Team at Purdue</p>
                         </a>
                     </div>
                     <div className="sb_footer-links-div">
