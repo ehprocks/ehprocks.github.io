@@ -34,10 +34,7 @@ function Navigation() {
       label: "Leaderboard",
       path: "/leaderboard",
     },
-    {
-      label: "Calendar", 
-      path: "/calendar",
-    }
+
   ]);
 
   return (
