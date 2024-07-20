@@ -39,7 +39,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "add-domain": "echo ehp.rocks > public/CNAME",
+    "add-domain": "echo ehp.rocks > build/CNAME",
     "deploy": "npm run add-domain && gh-pages -d build",
     "dev": "react-scripts start",
     "build": "react-scripts build",
