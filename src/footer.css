@@ -1,5 +1,5 @@
 .footer {
-    background-color: #121212;
+    background-color: #000000fa;
     margin-bottom: 0;
     padding-bottom: 0;
     overflow: hidden;
@@ -46,7 +46,7 @@
     webkit-border-radius: 25px;
     moz-border-radius: 25px;
     border-radius: 25px;
-    background: #38f06f;
+    background: #7bed9f;
 }
 .sb_footer-links-div p{
     font-size: 15px;

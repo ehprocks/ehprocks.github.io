@@ -18,8 +18,8 @@ const Footer = () => {
                         <a href="https://polytechnic.purdue.edu/departments/computer-and-information-technology">
                             <p>Purdue CIT</p>
                         </a>
-                        <a href="https://boilerlink.purdue.edu/organization/cdcc">
-                            <p>Blue Team at Purdue</p>
+                        <a href="https://boilerlink.purdue.edu/organization/btap">
+                            <p>Purdue Blue Team</p>
                         </a>
                     </div>
                     <div className="sb_footer-links-div">
