@@ -1,69 +1,48 @@
-import React, { useState } from "react";
-import { Table, Thead, Tbody, Tr, Th, Td, Container, IconButton } from "@chakra-ui/react";
-import { ChevronDownIcon, ChevronUpIcon } from "@chakra-ui/icons";
+import React from "react";
+import { Table, Thead, Tbody, Tr, Th, Td, Container, Text } from "@chakra-ui/react";
 
 const BASE_URL = "https://hackthebox.com";
 
 const LeaderboardTable = ({ data }) => {
-  const [sortBy, setSortBy] = useState(null);
-  const [sortOrder, setSortOrder] = useState("asc");
-
-  const handleSort = (column) => {
-    if (sortBy === column) {
-      setSortOrder(sortOrder === "asc" ? "desc" : "asc");
-    } else {
-      setSortBy(column);
-      setSortOrder("asc");
-    }
-  };
-
-  const sortedData = sortBy
-    ? data.slice().sort((a, b) => {
-        const aValue = a[sortBy];
-        const bValue = b[sortBy];
-        if (sortOrder === "asc") {
-          return aValue < bValue ? -1 : 1;
-        } else {
-          return aValue > bValue ? -1 : 1;
-        }
-      })
-    : data;
-
+  if (!Array.isArray(data) || data.length === 0) {
+    return <Text>No data available</Text>;
+  }
+  
   return (
-    <Table variant="simple" size={{ base: "sm", md: "md", lg: "lg" }}>
+    <Table
+      variant="simple"
+      size={{ base: "sm", md: "md", lg: "lg" }}
+      fontSize={{ base: "14px", sm: "14px", md: "16px", lg: "20px" }}
+    >
       <Thead>
         <Tr>
           <Th color={"yellowgreen"}></Th>
-          <Th color={"yellowgreen"} onClick={() => handleSort("name")}>
-            Name
-            {sortBy === "name" && (sortOrder === "asc" ? <ChevronDownIcon /> : <ChevronUpIcon />)}
-          </Th>
-          <Th color={"yellowgreen"} display={{ base: "none", md: "table-cell" }} onClick={() => handleSort("root_owns")}>
-            Root Owns
-            {sortBy === "root_owns" && (sortOrder === "asc" ? <ChevronDownIcon /> : <ChevronUpIcon />)}
-          </Th>
-          <Th color={"yellowgreen"} onClick={() => handleSort("rank_text")}>
-            Rank
-            {sortBy === "rank_text" && (sortOrder === "asc" ? <ChevronDownIcon /> : <ChevronUpIcon />)}
-          </Th>
-          <Th color={"yellowgreen"} onClick={() => handleSort("points")}>
-            Points
-            {sortBy === "points" && (sortOrder === "asc" ? <ChevronDownIcon /> : <ChevronUpIcon />)}
+          <Th color={"yellowgreen"}>Name</Th>
+          <Th color={"yellowgreen"}>Root Owns</Th>
+          <Th color={"yellowgreen"}>
+            <Container display={{ base: "none", sm: "flex" }}>Rank</Container>
           </Th>
         </Tr>
       </Thead>
       <Tbody>
-        {sortedData.map((user) => (
+        {data.map((user) => (
           <Tr key={user.id}>
             <Td>
               <Container display={{ base: "none", sm: "flex" }}>
-                <img src={BASE_URL + user.avatar} alt={user.name} className="avatar" />
+                <img
+                  src={BASE_URL + user.avatar}
+                  alt={user.name}
+                  className="avatar"
+                />
               </Container>
             </Td>
             <Td>{user.name}</Td>
-            <Td display={{ base: "none", md: "table-cell" }}>{user.root_owns}</Td>
-            <Td>{user.rank_text}</Td>
-            <Td>{user.points}</Td>
+            <Td>{user.root_owns}</Td>
+            <Td>
+              <Container display={{ base: "none", sm: "flex" }}>
+                {user.rank_text}
+              </Container>
+            </Td>
           </Tr>
         ))}
       </Tbody>

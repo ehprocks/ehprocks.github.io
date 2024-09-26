@@ -16,23 +16,30 @@ import LeaderboardTable from "../LeaderboardTable";
 import Navigation from "../Navigation";
 import Footer from "../footer";
 
+
 const Statistics = () => {
   const [data, setData] = useState([]);
 
   useEffect(() => {
     const fetchData = async () => {
-      const response = await fetch(
-        "https://us-east1-temporal-field-383822.cloudfunctions.net/ethical-hackers/statistics"
-      );
-      const json = await response.json();
-      console.log(json);
-      setData(json);
+      try {
+        const response = await fetch(
+          "https://us-east1-temporal-field-383822.cloudfunctions.net/ethical-hackers/statistics"
+        );
+        const json = await response.json();
+        console.log(json);
+        setData(json.data || []); // Access the 'data' property of the response
+      } catch (error) {
+        console.error('Error fetching data:', error);
+        setData([]);
+      }
     };
     fetchData();
   }, []);
 
   return <LeaderboardTable data={data} />;
 };
+
 
 function About() {
   const [dots, setDots] = useState<Array<typeof Dot>>([]);
