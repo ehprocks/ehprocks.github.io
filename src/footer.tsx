@@ -30,6 +30,9 @@ const Footer = () => {
                         <a href="https://www.peraton.com/">
                             <p>Peraton</p>
                         </a>
+                        <a href="https://muffinmanhosting.com/">
+                            <p>Muffin Man Hosting</p>
+                        </a>
                     </div>
                     <div className="sb_footer-links-div">
                         <h4>Organization</h4>
