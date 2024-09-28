@@ -13,12 +13,7 @@ a {
     border: #000000 !important;
 }
 .fc-direction-ltr .fc-daygrid-event.fc-event-end, .fc-direction-rtl .fc-daygrid-event.fc-event-start {
-    color: #000000 !important;
-    background-color: #32CD32 !important;
-}
-.fc-list-day-cushion {
-    color: #aee83b !important;
-    background-color: #000000 !important;
+    background-color: #09ff1d !important;
 }
 .fc-button  {
     color: #000000 !important;
@@ -36,19 +31,10 @@ a {
     color: #aee83b !important;
     background-color: #000000 !important;
 }
-.fc .fc-list-event-dot {
-    border: calc(var(--fc-list-event-dot-width)/2) solid #ffffff;
-    border-radius: calc(var(--fc-list-event-dot-width)/2);
-    box-sizing: content-box;
-    display: inline-block;
-    height: 0px;
-    width: 0px;
-}
 .fc-daygrid-event-dot {
-    border: calc(var(--fc-daygrid-event-dot-width)/2) solid #ffffff;
-    border-radius: calc(var(--fc-daygrid-event-dot-width)/2);
-    box-sizing: content-box;
-    height: 0px;
-    margin: 0px 4px;
-    width: 0px;
+    border: calc(var(--fc-daygrid-event-dot-width)/2) solid #000000; 
+}
+.fc-direction-ltr .fc-daygrid-event.fc-event-end, 
+.fc-direction-rtl .fc-daygrid-event.fc-event-start {
+    color: #000000 !important; /* Change to white */
 }
