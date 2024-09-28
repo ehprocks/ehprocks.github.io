@@ -22,15 +22,34 @@ import * as bootstrap from "bootstrap";
 
 // EVENTS
 const events = [
-  { title: 'Surveillance', start: '2024-04-01T19:00:00'}, 
-  { title: 'Headless', start: '2024-04-11T19:00:00'},
-  { title: 'Peraton Speaker Event ', start: '2024-04-12T19:00:00'},
-  { title: 'Elections', start: '2024-04-15T19:00:00'},
+  { title: 'Callout', start: '2024-08-26T19:00:00'},
+  { title: 'Kali VM setup', start: '2024-08-29T19:00:00'},
+  { title: 'LoL Event', start: '2024-09-04T19:30:00'},
+  { title: 'Career night', start: '2024-09-05T19:00:00'},
+  { title: 'Kali Crash Course', start: '2024-09-09T19:00:00'},
+  { title: 'TurtleCTF Showcase', start: '2024-09-12T19:00:00'},
+  { title: 'Reconnaissance', start: '2024-09-16T19:00:00'},
+  { title: 'Crowdstrike Recap', start: '2024-09-19T19:00:00'},
+  { title: 'Uplink Walkthrough', start: '2024-09-23T19:00:00'},
+  { title: 'Password Crackin\'', start: '2024-09-26T19:00:00'},
+  { title: 'First Box: BoardLight', start: '2024-09-30T19:00:00'},
+  { title: 'Tools of the Trade', start: '2024-10-03T19:00:00'},
+  { title: 'SQLi Bootcamp', start: '2024-10-10T19:00:00'},
+  { title: 'PrivEsc Basics', start: '2024-10-14T19:00:00'},
+  { title: 'UHP', start: '2024-10-21T19:00:00'},
+  { title: 'NCL prep', start: '2024-10-24T19:00:00'},
+  { title: 'NCL recap', start: '2024-10-28T19:00:00'},
+  { title: 'Common Web Vulnerabilities', start: '2024-11-04T19:00:00'},
+  { title: 'Juice Shop', start: '2024-11-07T19:00:00'},
+  { title: 'Juice Shop II', start: '2024-11-11T19:00:00'},
+  { title: 'Wireless Pentesting', start: '2024-11-18T19:00:00'},
+  { title: 'Hardware Hacking an IoT Device', start: '2024-11-21T19:00:00'},
+  { title: 'EOY social', start: '2024-11-25T19:00:00'}
 ]
 
+
 const cancelled = [
-  { title: 'Meeting Cancelled', start: '2024-04-04T19:00:00'},
-  { title: 'Meeting Cancelled', start: '2024-04-08T19:00:00'}
+
 ] 
 
 function Calendar() {
