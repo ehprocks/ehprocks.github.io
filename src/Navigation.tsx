@@ -32,7 +32,7 @@ function Navigation() {
     },
     {
       label: "Schedule",
-      path: "/calendar",
+      path: "/schedule",
     },
 
   ]);

@@ -18,7 +18,7 @@ function App() {
         <Route path="resources" element={<Resources />} />
         <Route path="discord" element={<Discord />} />
         <Route path="leaderboard" element={<Leaderboard />} />
-        <Route path="calendar" element={<Calendar />} />
+        <Route path="schedule" element={<Calendar />} />
         <Route path="admin" element={<Admin />} />
       </Routes>
     </Router>
