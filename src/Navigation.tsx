@@ -30,10 +30,10 @@ function Navigation() {
       label: "Discord",
       path: "/discord",
     },
-    {
+    /*{
       label: "Leaderboard",
       path: "/leaderboard",
-    },
+    },*/
 
   ]);
 
