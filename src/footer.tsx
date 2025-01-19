@@ -58,7 +58,7 @@ const Footer = () => {
                     <div className="sb_footer-below">
                         <div className="sb_footer-copyright">
                             <p>
-                                ©2024 <a href="">Ethical Hackers of Purdue.</a> All rights Reserved.
+                                ©2025 <a href="">Ethical Hackers of Purdue.</a> All rights Reserved.
                             </p>
                         </div>
                     </div>
