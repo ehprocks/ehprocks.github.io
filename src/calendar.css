@@ -1,40 +1,64 @@
-.popoverStyle{
+.popoverStyle {
     z-index: 99999 !important;
 }
+
 a {
-    color: #7bed9f !important;
+    color: #f2fff5;
 }
-.fc-h-event .fc-event-title-container {
-    color: #000000 !important;
-    background-color: #aee83bdc !important;
+
+/* Calendar General Styles */
+.fc {
+    background-color: #000000 !important;
+    color: #3df06a !important;
 }
+
+/* Calendar Header */
 .fc-toolbar-title {
-    color: #aee83b !important;
+    color: #3df06a !important;
     border: #000000 !important;
 }
-.fc-direction-ltr .fc-daygrid-event.fc-event-end, .fc-direction-rtl .fc-daygrid-event.fc-event-start {
-    background-color: #09ff1d !important;
-}
-.fc-button  {
+
+.fc-button {
     color: #000000 !important;
-    background-color: #aee83b !important;
+    background-color: #3df06a !important;
 }
-.fc-list-event-time {
-    color: #aee83b !important;
-    background-color: #000000 !important;
-}
-.fc-list-event-title {
-    color: #aee83b !important;
-    background-color: #000000 !important;
-}
-.fc-list-event-graphic {
-    color: #aee83b !important;
-    background-color: #000000 !important;
-}
-.fc-daygrid-event-dot {
-    border: calc(var(--fc-daygrid-event-dot-width)/2) solid #000000; 
-}
+
+/* Event Styles */
+.fc-h-event .fc-event-title-container,
 .fc-direction-ltr .fc-daygrid-event.fc-event-end, 
 .fc-direction-rtl .fc-daygrid-event.fc-event-start {
-    color: #000000 !important; /* Change to white */
+    color: #000000 !important;
+    background-color: #3df06a !important;
+}
+
+/* List View Styles */
+.fc-list-event-time,
+.fc-list-event-title,
+.fc-list-event-graphic,
+.fc-list-table td,
+.fc-list-day th {
+    color: #3df06a !important;
+    background-color: #000000 !important;
+}
+
+/* Day Cells */
+.fc-day,
+.fc-day-today,
+.fc-list-day-cushion,
+.fc-popover {
+    background-color: #000000 !important;
+}
+
+/* Event Dot */
+.fc-daygrid-event-dot {
+    border: calc(var(--fc-daygrid-event-dot-width)/2) solid #000000;
+}
+/* Event Dot in List View */
+.fc-list-event-dot {
+    border-color: #3df06a !important;
+}
+
+/* Event Dot in Day/Week/Month View */ 
+.fc-daygrid-event-dot {
+    border-color: #3df06a !important;
 }
