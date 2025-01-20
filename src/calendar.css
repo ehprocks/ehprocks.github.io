@@ -2,8 +2,8 @@
     z-index: 99999 !important;
 }
 
-a {
-    color: #f2fff5;
+a.fc-daygrid-day-number {
+    color: #f7fcf8 ;
 }
 
 /* Calendar General Styles */
@@ -14,7 +14,7 @@ a {
 
 /* Calendar Header */
 .fc-toolbar-title {
-    color: #3df06a !important;
+    color: #f7fcf8 ;
     border: #000000 !important;
 }
 
@@ -37,7 +37,7 @@ a {
 .fc-list-event-graphic,
 .fc-list-table td,
 .fc-list-day th {
-    color: #3df06a !important;
+    color: #f7fcf8 !important;
     background-color: #000000 !important;
 }
 
