@@ -31,7 +31,7 @@ function Navigation() {
       path: "/discord",
     },
     {
-      label: "Schedule",
+      label: "Calendar",
       path: "/schedule",
     },
 
